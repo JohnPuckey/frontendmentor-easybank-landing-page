@@ -551,4 +551,52 @@ display: none;
     margin: 35px 0 90px;
 }
 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 290px 190px 190px 1fr;
+    grid-template-rows: 75px 1fr;
+    justify-content: center;
+    grid-template-areas: 
+        "logo links1 links2 invite"
+        "social links1 links2 copy";
+    /* border: 1px red dotted; */
+}
+
+.footer-logo {
+    justify-content: start;
+    grid-area: logo;
+}
+
+.social {
+    grid-area: social;
+    justify-content: start;
+    align-items: end;
+    margin: 0 0;
+}
+
+.footer-links1 {
+    align-items: start;
+    justify-content: start;
+    grid-area: links1;
+}
+
+.footer-links2 {
+    align-items: start;
+    justify-content: start;
+    grid-area: links2;
+}
+
+.footer-grid .invite-btn {
+    justify-self: end;
+    align-self: start;
+    grid-area: invite;
+    margin: 0;
+}
+
+.copy {
+    grid-area: copy;
+    justify-self: end;
+    font-size: .9em;
+}
+
 }
